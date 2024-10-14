@@ -1,0 +1,22 @@
+header{
+    height: 90px;
+    background-color: #252e19;
+    display: flex;
+}
+#logo{
+    
+}
+
+img{
+    height: 90px;
+    width: 90px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+.elementosNav{
+    color: aliceblue;
+}
+
