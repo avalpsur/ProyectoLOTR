@@ -104,19 +104,31 @@ ul{
     font-size: larger;
 }
 
-#introduccion{
+.introduccion{
     text-align: center;
     margin-top: 50px;
 }
 
 #destinos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 50px;
 }
 
 .ejemplos{
     flex-basis: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ejemplos img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 25px;
 }
 
 .tituloEjemplo{
@@ -124,7 +136,13 @@ ul{
 }
 
 .subtituloEjemplo{
+    margin-top: 10px;
     text-align: justify;
+}
+
+.imagen{
+    width: 100px;
+    height: 100px;
 }
 footer{
     height: 100px;
