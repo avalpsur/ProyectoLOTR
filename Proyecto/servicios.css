@@ -48,7 +48,7 @@ ul{
     font-family: 'TolkienFont', sans-serif;
     text-decoration: none;
 }
-.main{
+main{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -56,7 +56,14 @@ ul{
     margin-right: 200px;
     font-family: 'Cinzel', serif;
 }
+#servicios{
+    text-align: center;
+}
 
+#servicios h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 .grid-servicios{
     display:grid;
     grid-template-columns:auto auto;
@@ -87,7 +94,7 @@ ul{
     padding: 40px 20px;
     text-align: center;
     font-family: 'Cinzel', serif;
-    position: relative;
+    margin-top: 20px;
 }
 
 #contacto .texto-contacto p {

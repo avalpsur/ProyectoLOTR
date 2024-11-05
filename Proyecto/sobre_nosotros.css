@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'TolkienFont';
+    src: url('anirb___.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'TolkienFont2';
+    src: url('tolkien.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cinzel' ;
+    src: url('Cinzel-Regular.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 90px;
+    background-color: #252e19;
+    display: flex;
+    align-items: center;
+}
+#logo {
+    flex-basis: 35%;
+    text-align: center;
+}
+
+#logo img {
+    height: 90px;
+    width: 150px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+#navSup {
+    width: 100%;
+    margin-right: 10%;
+}
+.elementosNav {
+    color: #DBBD69;
+    flex-basis: 25%;
+    font-family: 'TolkienFont', sans-serif;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Cinzel', serif;
+}
+
+#guías {
+    margin-bottom: 50px; 
+}
+
+.introGuías {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.contenedorGuías {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tarjetaGuía {
+    background-color: #2D1E10;
+    color: #DBBD69;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fotoGuía {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#contacto {
+    background-color: #2D1E10;
+    color: #DBBD69;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    margin-top: 20px;
+}
+
+#contacto .texto-contacto p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.boton-contacto {
+    background-color: #DBBD69;
+    color: #2D1E10;
+    font-family: 'TolkienFont2', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-contacto:hover {
+    background-color: #f0d29e;
+}
+
+footer {
+    height: 100px;
+    background-color: #252e19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: #DBBD69;
+    font-family: 'Cinzel', serif;
+}

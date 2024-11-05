@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'TolkienFont';
+    src: url('anirb___.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'TolkienFont2';
+    src: url('tolkien.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cinzel' ;
+    src: url('Cinzel-Regular.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    height: 90px;
+    background-color: #252e19;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    flex-basis: 35%;
+    text-align: center;
+}
+
+#logo img {
+    height: 90px;
+    width: 150px;
+}
+
+#navSup {
+    width: 100%;
+    margin-right: 10%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.elementosNav {
+    color: #DBBD69;
+    font-family: 'TolkienFont', sans-serif;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Cinzel', serif;
+}
+
+#testimonios {
+    background-color: #f5f5f5;
+    padding: 50px 10px;
+    text-align: center;
+    color: #2D1E10;
+}
+
+#testimonios h2 {
+    font-size: 2.5rem;
+    color: #252e19;
+    margin-bottom: 20px;
+}
+
+.introTestimonios {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.gridTestimonios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjetaTestimonio {
+    background-color: #DBBD69;
+    color: #2D1E10;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.textoTestimonio {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.nombreTestimonio {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: right;
+    color: #2D1E10;
+}
+
+.masTestimonios,
+.masTestimonios button{
+    margin-top: 40px;
+}
+
+#contacto {
+    background-color: #2D1E10;
+    color: #DBBD69;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    margin-top: 20px;
+}
+
+.texto-contacto p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.boton-contacto {
+    background-color: #DBBD69;
+    color: #2D1E10;
+    font-family: 'TolkienFont2', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-contacto:hover {
+    background-color: #f0d29e;
+}
+
+
+
+footer {
+    height: 100px;
+    background-color: #252e19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #DBBD69;
+    font-family: 'Cinzel', serif;
+}
