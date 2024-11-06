@@ -52,7 +52,7 @@ ul{
 
 #hero{
     height: 900px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(hero.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero.png);
     background-size: cover;
     display:flex;
     flex-direction: column;
