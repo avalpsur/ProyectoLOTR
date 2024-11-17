@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'TolkienFont';
+    src: url('anirb___.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'TolkienFont2';
+    src: url('tolkien.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cinzel' ;
+    src: url('Cinzel-Regular.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    font-family: 'Cinzel', serif;
+}
+header{
+    height: 90px;
+    background-color: #252e19;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    flex-basis: 35%;
+    text-align: center;
+}
+
+#logo img{
+    height: 90px;
+    width: 150px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+#navSup{
+    width: 100%;
+    margin-right: 10%;
+}
+.elementosNav{
+    color: #DBBD69;
+    flex-basis: 25%;
+    font-family: 'TolkienFont', sans-serif;
+    text-decoration: none;
+}
+
+#hero div h1{
+    font-family: 'TolkienFont2', sans-serif;
+}
+
+footer{
+    height: 100px;
+    background-color: #252e19;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+footer div p{
+    color: #DBBD69;
+    font-family: 'Cinzel', serif;
+}
+footer div p div{
+    color: #DBBD69;
+    font-family: 'Cinzel', serif;
+}

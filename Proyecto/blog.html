@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="principal.css">
-    <title>El Montaraz Errante</title>
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>El Pony Pisador</title>
 </head>
 <body>
     <header>
@@ -24,11 +25,91 @@
         </div>
     </header>
 
-    <div id="hero">
-        <div id="titulo">EL MONTARAZ ERRANTE</div>
-        <div id="subtitulo">Viajes por la Tierra Media</div>
-        <div><input type="button" value="Emprende tu aventura" class="botonHero"></div>
+    <div id="hero" class="bg-cover bg-center h-64" style="background-image: url('img/moria.png')">
+        <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-white">
+            <h1 class="text-4xl font-bold">El Pony Pisador</h1>
+            <p class="mt-2 text-lg">Explora los rincones más mágicos de la Tierra Media con nosotros.</p>
+        </div>
     </div>
+
+
+    <div class="container mx-auto p-5 flex justify-between items-center">
+        <input type="text" placeholder="Buscar lugares, personajes, historias..." class="w-full p-2 border rounded-lg mr-4">
+        <button class="bg-green-900 text-white px-4 py-2 rounded-lg">Buscar</button>
+    </div>
+
+    
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-5">
+        
+        
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <a href="#">
+                <img src="img/hero.png" alt="Imagen de Rivendel" class="w-full h-40 object-cover">
+            </a>
+            <div class="p-4">
+                <h3 class="text-xs uppercase text-gray-500 mt-2">Destino de Aventura</h3>
+                <h2 class="text-lg font-semibold text-gray-800 mt-1">
+                    <a href="articulo.html" class="hover:text-green-900">Rivendel: El refugio de los elfos</a>
+                </h2>
+                <p class="text-gray-700 text-sm mt-3">Explora la serenidad de Rivendel, el último hogar de los elfos y el lugar de descanso para muchos viajeros en sus aventuras.</p>
+                <div class="flex justify-between text-xs text-gray-500 mt-4">
+                    <div>14 noviembre 2024</div>
+                    <div><span>por</span> Equipo Tierra Media</div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <a href="#">
+                <img src="img/comarca.jpg" alt="Imagen de la Comarca" class="w-full h-40 object-cover">
+            </a>
+            <div class="p-4">
+                <h3 class="text-xs uppercase text-gray-500 mt-2">Exploración</h3>
+                <h2 class="text-lg font-semibold text-gray-800 mt-1">
+                    <a href="articulo.html" class="hover:text-green-900">La Comarca: Tierra de paz y sencillez</a>
+                </h2>
+                <p class="text-gray-700 text-sm mt-3">Descubre la vida tranquila de los hobbits y explora las colinas y campos verdes de la Comarca, donde la vida es simple y plena.</p>
+                <div class="flex justify-between text-xs text-gray-500 mt-4">
+                    <div>10 noviembre 2024</div>
+                    <div><span>por</span> Gandalf el Gris</div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <a href="#">
+                <img src="img/mordor.jpg" alt="Imagen de Mordor" class="w-full h-40 object-cover">
+            </a>
+            <div class="p-4">
+                <h3 class="text-xs uppercase text-gray-500 mt-2">Destino Peligroso</h3>
+                <h2 class="text-lg font-semibold text-gray-800 mt-1">
+                    <a href="articulo.html" class="hover:text-green-900">Mordor: Las tierras oscuras</a>
+                </h2>
+                <p class="text-gray-700 text-sm mt-3">Atrévete a conocer las tierras sombrías de Mordor, hogar de Sauron y sus sirvientes. Solo los valientes llegan hasta aquí.</p>
+                <div class="flex justify-between text-xs text-gray-500 mt-4">
+                    <div>8 noviembre 2024</div>
+                    <div><span>por</span> Frodo Bolsón</div>
+                </div>
+            </div>
+        </div>
+
+   
+
+    </div>
+
+    
+    <footer class="text-white mt-10 p-4">
+        <div class="container mx-auto text-center space-y-2">
+            <p>© 2024 El Pony Pisador Blog. Todos los derechos reservados.</p>
+            <div class="space-x-4">
+                <a href="" class="hover:underline">Facebook</a>
+                <a href="" class="hover:underline">Twitter</a>
+                <a href="" class="hover:underline">Instagram</a>
+            </div>
+        </div>
+    </footer>
 
     
 </body>

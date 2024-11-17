@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>El Pony Pisador</title>
+</head>
+<body>
+    
+    <header>
+        <div id="logo">
+            <a href="principal.html">
+                <img src="img/logo.png">
+            </a>
+        </div>
+        <div id="navSup">
+            <ul>
+                <li><a class="elementosNav" href="servicios.html">Servicios</a></li>
+                <li><a class="elementosNav" href="testimonios.html">Testimonios</a></li>
+                <li><a class="elementosNav" href="sobre_nosotros.html">Sobre nosotros</a></li>
+                <li><a class="elementosNav" href="blog.html">Blog</a></li>
+                <li><a class="elementosNav" href="tienda.html">Tienda</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <div class="bg-cover bg-center h-64" style="background-image: url('img/rivendell.webp')">
+        <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-white">
+            <h1 class="text-4xl font-bold">Rivendel: El refugio de los elfos</h1>
+            <p class="mt-2 text-lg">Un viaje profundo al último hogar al oeste de las montañas.</p>
+        </div>
+    </div>
+
+    
+    <div class="container mx-auto p-5">
+        
+        <div class="text-gray-600 text-sm flex justify-between items-center mb-4">
+            <div>
+                <span>Publicado por</span> <strong><a href="autor.html" class="hover:underline">Elrond</a></strong> | <span>14 noviembre 2024</span>
+            </div>
+            <div>
+                <span>Categoría:</span> <strong>Destino de Aventura</strong>
+            </div>
+        </div>
+
+        
+        <article class="prose lg:prose-lg text-gray-800">
+            <p>Rivendel, el escondido refugio de los elfos en las tierras de Eriador, ha sido desde tiempos inmemoriales un lugar de descanso, conocimiento y magia. Fundado por Elrond, este rincón de serenidad ha acogido a héroes, viajeros y sabios en momentos de necesidad.</p>
+            <p>Explorar Rivendel es sumergirse en un lugar donde el tiempo parece detenerse. Sus cascadas cristalinas, arquitectura armoniosa con la naturaleza y una atmósfera de paz son únicas en toda la Tierra Media.</p>
+            <img src="img/hero.png" alt="Vista de Rivendel" class="w-full rounded-lg my-4">
+            <p>Para llegar a Rivendel, los viajeros deben cruzar las montañas nubladas, enfrentando tanto desafíos como maravillas en el camino. Pero todo esfuerzo vale la pena una vez que se alcanza este santuario de los elfos.</p>
+            <h2 class="text-2xl font-semibold text-green-900 mt-6">Consejos para tu visita</h2>
+            <ul class="ml-6 mt-3 text-gray-700 ">
+                <li>Respetar las tradiciones élficas y la naturaleza.</li>
+                <li>No olvides llevar un diario para registrar la experiencia.</li>
+                <li>Aprovecha para aprender de los sabios que residen en Rivendel.</li>
+            </ul>
+        </article>
+    </div>
+
+    
+    <div class="container mx-auto p-5 border-t border-gray-300">
+        <h3 class="text-lg font-bold text-gray-800">Comentarios</h3>
+        
+        <form class="mt-4">
+            <textarea placeholder="Deja tu comentario..." class="w-full p-3 border rounded-lg mb-2"></textarea>
+            <button class="bg-green-900 text-white px-4 py-2 rounded-lg">Enviar</button>
+        </form>
+        
+        <div class="mt-6">
+            <div class="border-b border-gray-300 pb-4 mb-4">
+                <p><strong>Aragorn:</strong> Rivendel siempre será mi hogar espiritual. Gracias por este artículo tan bien escrito.</p>
+                <span class="text-sm text-gray-500">Publicado el 10 noviembre 2024</span>
+            </div>
+            <div class="border-b border-gray-300 pb-4 mb-4">
+                <p><strong>Legolas:</strong> Una excelente descripción, aunque Rivendel no necesita palabras para ser admirado.</p>
+                <span class="text-sm text-gray-500">Publicado el 8 noviembre 2024</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container mx-auto p-5">
+        <h3 class="text-lg font-bold text-gray-800">También te puede interesar</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4">
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <a href="#">
+                    <img src="img/comarca.jpg" alt="Imagen de la Comarca" class="w-full h-40 object-cover">
+                </a>
+                <div class="p-4">
+                    <h3 class="text-xs uppercase text-gray-500 mt-2">Exploración</h3>
+                    <h2 class="text-lg font-semibold text-gray-800 mt-1">
+                        <a href="#" class="hover:text-green-900">La Comarca: Tierra de paz y sencillez</a>
+                    </h2>
+                    <p class="text-gray-700 text-sm mt-3">Descubre la vida tranquila de los hobbits y explora las colinas y campos verdes de la Comarca.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <a href="#">
+                    <img src="img/mordor.jpg" alt="Imagen de Mordor" class="w-full h-40 object-cover">
+                </a>
+                <div class="p-4">
+                    <h3 class="text-xs uppercase text-gray-500 mt-2">Destino Peligroso</h3>
+                    <h2 class="text-lg font-semibold text-gray-800 mt-1">
+                        <a href="#" class="hover:text-green-900">Mordor: Las tierras oscuras</a>
+                    </h2>
+                    <p class="text-gray-700 text-sm mt-3">Atrévete a conocer las tierras sombrías de Mordor, hogar de Sauron y sus sirvientes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="text-white mt-10 p-4">
+        <div class="container mx-auto text-center space-y-2">
+            <p>© 2024 El Pony Pisador Blog. Todos los derechos reservados.</p>
+            <div class="space-x-4">
+                <a href="" class="hover:underline">Facebook</a>
+                <a href="" class="hover:underline">Twitter</a>
+                <a href="" class="hover:underline">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
