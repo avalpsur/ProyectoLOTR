@@ -2,47 +2,52 @@
     font-family: 'TolkienFont';
     src: url('anirb___.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'TolkienFont2';
     src: url('tolkien.TTF') format('truetype');
 }
 
 @font-face {
-    font-family: 'Cinzel' ;
+    font-family: 'Cinzel';
     src: url('Cinzel-Regular.otf');
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-
-header{
+header {
     height: 90px;
     background-color: #252e19;
     display: flex;
     align-items: center;
+    padding: 0 10px; 
 }
-#logo{
+
+#logo {
     flex-basis: 35%;
     text-align: center;
 }
 
-#logo img{
+#logo img {
     height: 90px;
     width: 150px;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
 }
-#navSup{
+
+#navSup {
     width: 100%;
     margin-right: 10%;
 }
-.elementosNav{
+
+.elementosNav {
     color: #DBBD69;
     flex-basis: 25%;
     font-family: 'TolkienFont', sans-serif;
@@ -50,21 +55,21 @@ ul{
 }
 
 
-#hero{
-    height: 900px;
+#hero {
+    height: 700px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero.png);
     background-size: cover;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     font-family: 'TolkienFont2', sans-serif;
 }
 
-#hero div{
+#hero div {
     font-weight: 1000;
     text-shadow: #DBBD69 1px 0 10px;
-    color:#ffffff;
+    color: #ffffff;
 }
 
 .boton-contacto,
@@ -85,17 +90,16 @@ ul{
     background-color: #f0d29e;
 }
 
-#titulo{
-    font-size:50px;
+#titulo {
+    font-size: 50px;
 }
 
-#subtitulo{
+#subtitulo {
     font-size: 35px;
 }
 
 
-
-main{
+main {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -104,33 +108,35 @@ main{
     font-family: 'Cinzel', serif;
 }
 
-.icono{
-    width:20%;
+.icono {
+    width: 20%;
     height: 20%;
 }
 
-#principio{
+#principio {
     text-align: center;
     font-size: larger;
 }
 
-.introduccion{
+.introduccion {
     text-align: center;
     margin-top: 50px;
 }
 
-#destinos{
+#destinos {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
 
-.ejemplos{
-    flex-basis: 50%;
+
+.ejemplos {
+    flex-basis: 45%; 
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px; 
 }
 
 .ejemplos img {
@@ -141,15 +147,14 @@ main{
     margin-top: 25px;
 }
 
-.tituloEjemplo{
+.tituloEjemplo {
     text-align: center;
 }
 
-.subtituloEjemplo{
+.subtituloEjemplo {
     margin-top: 10px;
     text-align: justify;
 }
-
 
 #contacto {
     background-color: #2D1E10;
@@ -181,14 +186,98 @@ main{
     background-color: #f0d29e;
 }
 
-footer{
+footer {
     height: 100px;
     background-color: #252e19;
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
 }
-footer p{
+
+footer p {
     color: #DBBD69;
     font-family: 'Cinzel', serif;
+}
+
+
+@media (max-width: 1024px) {
+    #hero {
+        height: 500px;
+    }
+
+    #titulo {
+        font-size: 40px;
+    }
+
+    #subtitulo {
+        font-size: 30px;
+    }
+
+    main {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #destinos {
+        flex-direction: column;
+    }
+
+    .ejemplos {
+        flex-basis: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .ejemplos img {
+        width: 100%; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    #hero {
+        height: 400px;
+    }
+
+    #titulo {
+        font-size: 35px;
+    }
+
+    #subtitulo {
+        font-size: 25px;
+    }
+
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #destinos {
+        flex-direction: column;
+    }
+
+    .ejemplos {
+        flex-basis: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .ejemplos img {
+        width: 100%; 
+    }
+
+    .botonHero {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .boton-contacto {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }

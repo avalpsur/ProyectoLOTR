@@ -6,49 +6,52 @@
     font-family: 'TolkienFont2';
     src: url('tolkien.TTF') format('truetype');
 }
-
 @font-face {
-    font-family: 'Cinzel' ;
+    font-family: 'Cinzel';
     src: url('Cinzel-Regular.otf');
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-
-header{
+header {
     height: 90px;
     background-color: #252e19;
     display: flex;
     align-items: center;
 }
-#logo{
+
+#logo {
     flex-basis: 35%;
     text-align: center;
 }
 
-#logo img{
+#logo img {
     height: 90px;
     width: 150px;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
 }
-#navSup{
+
+#navSup {
     width: 100%;
     margin-right: 10%;
 }
-.elementosNav{
+
+.elementosNav {
     color: #DBBD69;
     flex-basis: 25%;
     font-family: 'TolkienFont', sans-serif;
     text-decoration: none;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -56,36 +59,51 @@ main{
     margin-right: 200px;
     font-family: 'Cinzel', serif;
 }
-#servicios{
+
+#servicios {
     text-align: center;
 }
 
-#servicios h2{
+#servicios h2 {
     margin-top: 40px;
     margin-bottom: 20px;
 }
-.grid-servicios{
-    display:grid;
-    grid-template-columns:auto auto;
-    grid-template-rows: auto;
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: start;
     margin-top: 20px;
     margin-bottom: 50px;
 }
 
-#servicio1{
-    grid-column: 1/3;
+.servicio {
+    background-color: #DBBD69;
+    color: #2D1E10;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+#servicio1 {
+    grid-column: 1 / 4; 
     margin-top: 50px;
     margin-bottom: 50px;
-   text-align:center; 
-}   
+    text-align: center;
+}
 
 .icono {
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 .icono img {
     width: 30px;
-    height: auto; 
+    height: auto;
 }
 
 #contacto {
@@ -101,7 +119,6 @@ main{
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
-
 
 .boton-contacto {
     width: 200px;
@@ -119,14 +136,40 @@ main{
 .boton-contacto:hover {
     background-color: #f0d29e;
 }
-footer{
+
+footer {
     height: 100px;
     background-color: #252e19;
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
 }
-footer p{
+
+footer p {
     color: #DBBD69;
     font-family: 'Cinzel', serif;
+}
+
+@media (max-width: 1024px) {
+    .grid-servicios {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    #servicio1 {
+        grid-column: 1 / 3;
+    }
+
+    .servicio {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-servicios {
+        grid-template-columns: 1fr; 
+    }
+
+    .servicio {
+        width: 90%;
+    }
 }
